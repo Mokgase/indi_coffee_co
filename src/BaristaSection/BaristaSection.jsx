@@ -8,18 +8,6 @@ const BaristaSection = () => {
     <div id='BaristaSection' className='w-full h-full'>
       <title>BaristaSection</title>
       <meta name="BaristaSection" content="This the Barista Section page"/>
-    {/* <Script id="google_analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-ZLP3CMVLW0"></Script>
-    <Script
-      id="google_analytics"
-      dangerouslySetInnerHTML={{
-        __html:`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-ZLP3CMVLW0');
-        `,
-      }}
-    /> */}
       <div className={styles.container}>
         <h1 className={styles.h1}>MEET YOUR BARISTAS</h1>
         <hr className={styles.line} />

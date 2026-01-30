@@ -6,7 +6,7 @@ const About = () => {
   return (
         <div id='about' className='w-full h-full'>
         <div className={styles.container}>
-              <h1 class ={styles.h1}>ABOUT</h1>
+              {/* <h1 class ={styles.h1}>ABOUT</h1> */}
             <hr className={styles.line}/>
           <div className={styles.column1}>
             <div className={styles.heading}>

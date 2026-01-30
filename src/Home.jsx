@@ -4,7 +4,7 @@ import Contact from './Contact/Contact';
 import BaristaSection from './BaristaSection/BaristaSection';
 import About from './About/About';
 // import StorySection from './Components/StorySection'
-// import CTASection from './Components/CTASection';
+import Cafe from './Cafe/Cafe';
 // import Hero from './Components/Hero';
 
 
@@ -20,6 +20,7 @@ const HomePage = (Component, pageProps ) => {
     {/* <Hero/>
     <StorySection/>  */}
     <BaristaSection/>
+    <Cafe/>
     <About/>
     <Contact/>
     {/* <Footer />  */}
