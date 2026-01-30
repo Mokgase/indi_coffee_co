@@ -1,0 +1,429 @@
+@font-face {
+  font-family: 'OpenSauceSans';
+  src: url("../../../public/Assets/fonts/OpenSauceSans-Black.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  margin: 1px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  margin-left: 60rem;
+}
+  
+  .p1{
+    font-family: 'Poppins';
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    /* padding-left: 50%; */
+    /* margin-right: 10%; */
+    z-index: 2;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card{
+    border-radius: 10px;
+    border-color: "D9D9D9";
+    border-width: 9rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 200px;
+    margin-bottom: 5rem;
+    color: #D9D9D9;
+  }
+
+  /* .formcontainer{
+    height: 200px;
+    margin-top: -6rem;
+  } */
+
+.labels{
+  color: #de841e;
+}
+
+  .column1{
+  position: relative;
+  left: 5%;
+  width: 30rem;
+  }
+
+  .column2{
+  position: relative;
+  right: -50%;
+  width: 30rem;
+  transform: translateY(-235px);
+  }
+
+  .column3{
+    position: relative;
+    /* left: 1%; */
+    width: 30rem;
+    /* margin-top: -9rem; */
+  }
+
+  .button{
+    position: absolute;
+    left: 100%;
+    margin-top: -5rem;
+  }
+
+  .inputs {
+    color: #de841e;
+    width: 100%;
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
+    font-size: 1rem; /* text-base */
+    font-weight: 500; /* font-medium */
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* focus:shadow-md */
+    background: transparent;
+    border-bottom: 2px solid #cacaca;
+  }
+  
+  .inputs:focus {
+    border-color: #de841e; /* focus:border-purple-500 */
+    box-shadow: none 
+  }
+  
+  .inputs::placeholder {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .textarea {
+    color: #de841e;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500; 
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #cacaca; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background: transparent;
+    resize: none; 
+  }
+  
+  .textarea:focus {
+    border-color: #de841e; /* Equivalent to focus:border-purple-500 */
+    box-shadow: none; /* Equivalent to focus:shadow-md */
+  }
+ 
+  .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4BB543;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+    animation: fadeInOut 3s ease forwards;
+  }
+  
+  .successMessage {
+  background-color: #de841e;
+  color: #cea87c;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+  
+  
+  /* mobile devices.*/
+  @media (min-width: 300px) and (max-width: 767px) {
+
+    .card{
+    border-radius: 10px;
+    border-color: "D9D9D9";
+    border-width: 9rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 200px;
+    margin-bottom: 5rem;
+    color: #D9D9D9;
+  }
+
+    .column1, .column2, .column3{
+      width: 10rem;
+      margin-left: -7rem;
+    }
+  
+    .column2{
+      margin-top: 0rem;
+      margin-left: -1rem;
+    }
+
+    .column1, .column3{
+      margin-left:-8rem;
+    }
+    
+
+  .underline{
+    border: none;
+    border-top: 4px solid #333;
+    margin: 10px;
+    width: 80%;
+    margin-top: 0.1rem;
+    margin-left: 2rem;
+  }
+
+  .line{
+    border: none;
+    border-top: 4px solid #333;
+    margin: 10px;
+    width: 100%;
+    margin-top: 0.1rem;
+    margin-left: 3rem;
+  }
+ 
+  .h1{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    margin-left: 7rem;
+    }
+
+    .text{
+      margin-top: 3rem;
+      margin-left: 5rem;
+    }
+
+    .p{
+      font-family: 'Poppins';
+      color: #1A1B25;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    .button{
+      position: absolute;
+      top:50%;
+      left:-60%;
+      transform: translate(100%, 150%);
+    }
+
+    .textarea {
+      color: #de841e;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500; 
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #cacaca; 
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      background: transparent;
+      resize:horizontal;
+      resize: none;
+      min-width: 200px; /* Default width */
+      width: auto;
+      max-width: 500px; /* Prevents it from getting too large */
+      overflow: hidden;
+      resize: none;
+    }
+
+    .textarea:focus {
+      border-color: #de841e; /* Equivalent to focus:border-purple-500 */
+      box-shadow: none; /* Equivalent to focus:shadow-md */
+    }
+
+    }
+
+
+  /* iPads & tablets.*/
+  @media (min-width: 768px) and (max-width: 1110px) {
+
+    .card{
+    border-radius: 10px;
+    border-color: "D9D9D9";
+    border-width: 9rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 200px;
+    margin-bottom: 5rem;
+    color: #D9D9D9;
+  }
+
+    .column1, .column2, .column3{
+      width: 10rem;
+      margin-left: -7rem;
+    }
+  
+    .column2{
+      margin-top: 0rem;
+      margin-left: 6rem;
+    }
+
+    .column1, .column3{
+      margin-left:-5rem;
+    }
+    
+
+  .underline{
+    border: none;
+    border-top: 4px solid #333;
+    margin: 10px;
+    width: 80%;
+    margin-top: 0.1rem;
+    margin-left: 7rem;
+  }
+
+  .line{
+    border: none;
+    border-top: 4px solid #333;
+    margin: 10px;
+    width: 100%;
+    margin-top: 0.1rem;
+    margin-left: 3rem;
+  }
+ 
+  .h1{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    margin-left: 31rem;
+    }
+
+    .text{
+      margin-top: 3rem;
+      margin-left: -19rem;
+    }
+
+    .p{
+      font-family: 'Poppins';
+      color: #1A1B25;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    .button{
+      position: absolute;
+      top:50%;
+      left: 70%;
+      transform: translate(100%, 150%);
+    }
+
+    .textarea {
+      color: #de841e;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500; 
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #cacaca; 
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      background: transparent;
+      resize:horizontal;
+      resize: none;
+      min-width: 200px; /* Default width */
+      width: auto;
+      max-width: 500px; /* Prevents it from getting too large */
+      overflow: hidden;
+      resize: none;
+    }
+
+    .textarea:focus {
+      border-color: #de841e; /* Equivalent to focus:border-purple-500 */
+      box-shadow: none; /* Equivalent to focus:shadow-md */
+    }
+
+    }
+   
+     @media (max-width: 1024px) { 
+      
+    }
+    
+    @media (min-width: 1025px) {
+    
+    
+    } 
+
+  /* small screens, laptops */
+  /* @media (min-width:769px) and  (max-width: 1024px) {
+    .row {
+      margin-top: 5rem; 
+    }
+  
+    .column {
+      margin-bottom: 5rem; 
+    }
+  
+   
+  
+    .column::after {
+      top: -3rem; 
+      height: calc(100% + 4rem); 
+    }
+  
+    .formcontainer {
+      padding: 0.5rem; 
+    }
+  
+    .inputs,
+    .textarea {
+      padding: 0.5rem 1rem; 
+      font-size: 0.9rem; 
+    }
+  
+    .contactItem {
+      margin-left: 0; 
+    }
+  
+    .contactItem svg {
+      font-size: 1rem; 
+    }
+  
+    .column::after {
+        display: none; 
+      }
+  
+    .contactItem span {
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 1rem; 
+        
+    }
+  
+    .contactItem{
+        align-items: center;
+    }
+  }
+   */
