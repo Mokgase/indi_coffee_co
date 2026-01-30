@@ -1,7 +1,7 @@
 // import styles from './Style/home.modules.css';
 import Contact from './Contact/Contact';
 // import Footer from './Footer/Footer';
-// import BaristaSection from './Components/BaristaSection';
+import BaristaSection from './BaristaSection/BaristaSection';
 import About from './About/About';
 // import StorySection from './Components/StorySection'
 // import CTASection from './Components/CTASection';
