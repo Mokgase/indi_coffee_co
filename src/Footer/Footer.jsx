@@ -6,18 +6,19 @@ import Button from "../Components/Button";
 const Footer =() => {
     return(
         <div className={styles.box}>
+            {/* <div className={styles.line}></div> */}
             <div className={styles.row}>
                 <div className={styles.column1}>
-                    <h1 className={styles.heading}>Cookies</h1>
+                    <p className={styles.heading}>Cookies</p>
                 </div>
                 <div className={styles.column2}>
-                    <h1 className={styles.heading}>Terms & Conditions</h1>
+                    <p className={styles.heading}>Terms & Conditions</p>
                 </div>
                 <div className={styles.column3}>
-                    <h1 className={styles.heading}>Retail Locations</h1>
+                    <p className={styles.heading}>Retail Locations</p>
                 </div>
                 <div className={styles.column4}>
-                    <h1 className={styles.heading}>2025 Indi Coffee Co</h1>
+                    <p className={styles.heading}>2025 Indi Coffee Co</p>
                 </div>
             </div>
         </div>

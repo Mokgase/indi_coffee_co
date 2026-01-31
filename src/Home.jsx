@@ -1,6 +1,6 @@
 // import styles from './Style/home.modules.css';
 import Contact from './Contact/Contact';
-// import Footer from './Footer/Footer';
+import Footer from './Footer/Footer';
 import BaristaSection from './BaristaSection/BaristaSection';
 import About from './About/About';
 // import StorySection from './Components/StorySection'
@@ -23,7 +23,7 @@ const HomePage = (Component, pageProps ) => {
     <Cafe/>
     <About/>
     <Contact/>
-    {/* <Footer />  */}
+    <Footer /> 
     </div>
   );
 };

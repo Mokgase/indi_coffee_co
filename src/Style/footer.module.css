@@ -1,6 +1,6 @@
 .box{
     padding: 3% 2.5%;
-    background: #D9D9D9;
+    background: #333;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -11,7 +11,7 @@
 .row{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-    grid-gap: 250px;
+    grid-gap: 100px;
 }
 
 @media (max-width: 1000px) {
@@ -34,7 +34,7 @@
 }
 
 .heading{
-    color:#de841e;
+    color:#E5E5E5;
 }
 
 .text{
