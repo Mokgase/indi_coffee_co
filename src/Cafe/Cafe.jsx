@@ -26,7 +26,13 @@ const Cafe = () => {
             </div>
           </div>
           <div className={styles.column2}>
-            <img src={cafe} alt="logo" width={310} height={400} placeholder="blur" radius={40} className="w-[80%] h-auto" />
+            <a
+              href='https://maps.app.goo.gl/eq9VPqg2TicU2udY7'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={cafe} alt="logo" width={310} height={400} placeholder="blur" radius={40} className="w-[80%] h-auto" />
+            </a>
           </div>
           <div className={styles.column3}>
             <p className={styles.p1}>
