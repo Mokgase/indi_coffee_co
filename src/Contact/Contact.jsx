@@ -44,12 +44,7 @@ const form = useRef();
         }}
       />   */}
       <div className={styles.container}>
-        <h1 className={styles.h1}>Let's Have Coffee</h1>
-        <div className={styles.text}>
-            <p className={styles.p1}>
-              Send us a message and let's get in touch.
-            </p>
-        </div>
+        <h1 className={styles.h1}>Let's <span className={styles.color}>Have</span> Coffee</h1>
           <form className={styles.formcontainer} ref={form} onSubmit={sendEmail}> 
               
                 <div className={styles.column1}>
@@ -71,7 +66,7 @@ const form = useRef();
                   placeholder='Province'
                   className={styles.inputs}
                    />
-                  <label className={styles.labels}>SEND MESSAGE</label>
+                  <label className={styles.labels}>Message</label>
                   <textarea
                     className={styles.textarea}
                     required

@@ -10,7 +10,7 @@
     border: none;
     border-radius: 20px;
     background-color: transparent;
-    border:2px solid #de841e;
+    border:2px solid #6C596E;
     cursor: pointer;
     font-size: 10px;
     outline: none;
@@ -23,7 +23,7 @@
   
   .roundedButton:after{
     content: "";
-    background: #de841e;
+    background: #3F182C;
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -42,14 +42,14 @@
   }
   
   .roundedButton:hover{
-    background-color:#E5E5E5;
+    background-color:#6E6B7D;
   }
   
   .text{
     font-family: sans-serif;
     text-wrap: nowrap;
     font-size: medium;
-    color:#de841e;
+    color:#6C596E;
     margin: 1px;
     padding: 2px;
   }
@@ -58,7 +58,7 @@
     font-family: sans-serif;
     text-wrap: nowrap;
     font-size: medium;
-    color:#fff;
+    color:black;
     margin: 1px;
     padding: 2px;
   }
