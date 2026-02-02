@@ -23,10 +23,10 @@
 }
 
 .listitems{
-    color: #1a1b25;
+    color: #6E6B7D;
 }
 .listitems:hover{
-    color:  #de841e;
+    color:  #6C596E;
 }
 
 .list{
@@ -34,7 +34,8 @@
 }
 
 .heading{
-    color:#E5E5E5;
+    color:#6C596E;
+    font-weight: bold;
 }
 
 .text{

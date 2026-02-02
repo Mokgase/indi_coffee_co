@@ -1,27 +1,15 @@
 import React from "react";
-import Script from "next/script";
+
 
 const PrivacyPolicy = () => {
   return (
     <div id='privacypolicy' className="max-w-3xl mx-auto p-6 text-gray-800">
-    <Script id="google_analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-ZLP3CMVLW0"></Script>
-    <Script
-      id="google_analytics"
-      dangerouslySetInnerHTML={{
-        __html:`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-ZLP3CMVLW0');
-        `,
-      }}
-    />
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="text-sm text-gray-600">Effective Date: [Insert Date]</p>
       
       <div className="mt-6">
         <h2 className="text-xl font-semibold">1. Introduction</h2>
-        <p>Welcome to Indi Hendrix. We are committed to protecting your privacy and ensuring that your personal information is handled securely and responsibly. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our website (<a href="https://indihendrix.com" className="text-blue-600 underline">https://indihendrix.com</a>) and services.</p>
+        <p>Welcome to Indi Coffee Co. We are committed to protecting your privacy and ensuring that your personal information is handled securely and responsibly. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our website (<a href="https://indicoffeeco.co.za" className="text-blue-600 underline">https://indicoffeeco.co.za</a>) and services.</p>
       </div>
       
       <div className="mt-6">
@@ -83,8 +71,8 @@ const PrivacyPolicy = () => {
       <div className="mt-6">
         <h2 className="text-xl font-semibold">9. Contact Us</h2>
         <p>If you have any questions, contact us at:</p>
-        <p><strong>Website:</strong> <a href="https://indihendrix.vercel.app/" className="text-blue-600 underline">https://indihendrix.com</a></p>
-        <p><strong>Phone:</strong> +27 67 878 7907</p>
+        <p><strong>Website:</strong> <a href="https://indicoffeeco.co.za" className="text-blue-600 underline">https://indicoffeeco.co.za</a></p>
+      
         <p><strong>Address:</strong> Pretoria, Gauteng, South Africa</p>
       </div>
 
