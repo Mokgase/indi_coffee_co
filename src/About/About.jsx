@@ -10,10 +10,10 @@ const About = () => {
             <hr className={styles.line}/>
           <div className={styles.column1}>
             <div className={styles.heading}>
-              <h2 class ={styles.h2}></h2>
+              <h2 className ={styles.h2}></h2>
             </div>
             <div className={styles.text}>
-              <p class={styles.p1}>
+              <p className={styles.p1}>
                 Indi Cofee Co. is a fast-paced specialty coffee bar built for people who move with intention. 
                 Whether you're heading into a meeting, hitting the gym, or just passing through, we serve high-quality coffee without the wait. 
                 No pretentious menus. No slow lines. Just good coffee, done properly and handed to you with respect for your time.

@@ -1,10 +1,10 @@
 // import styles from './Style/home.modules.css';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
-import BaristaSection from './BaristaSection/BaristaSection';
-import About from './About/About';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
+import BaristaSection from '../BaristaSection/BaristaSection';
+import About from '../About/About';
 // import StorySection from './Components/StorySection'
-import Cafe from './Cafe/Cafe';
+import Cafe from '../Cafe/Cafe';
 // import Hero from './Components/Hero';
 
 

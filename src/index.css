@@ -13,6 +13,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+  /*  */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollOffset {
+  position: relative;
+  top: 80px; /* Adjust based on the height of your navbar */
+  visibility: hidden;
+} 
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.topnav{
+  display: none;
+  gap: 5rem;
+  padding: 50%;
+  
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -66,3 +94,25 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (min-width: 768px) {
+  .topnav {
+    display: flex; /* md:flex */
+    justify-content: space-between;
+  }
+}
+
+.topnav {
+  text-transform: uppercase; /* uppercase */
+  align-items: center; /* items-center */
+  gap: 1rem; /* gap-8 */
+  padding: 3rem; /* px-8 */
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 500; /* Medium font weight */
+  justify-content: space-between; 
+ }

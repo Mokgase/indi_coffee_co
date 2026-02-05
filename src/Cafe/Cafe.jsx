@@ -8,7 +8,7 @@ const Cafe = () => {
         <div className={styles.container}>
           <div className={styles.column1}>
             <div className={styles.heading}>
-              <h2 class ={styles.h2}></h2>
+              <h2 className ={styles.h2}></h2>
             </div>
             <div className={styles.text}>
                 <h3 className={styles.h3}>
