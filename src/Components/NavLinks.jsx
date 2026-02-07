@@ -1,77 +1,24 @@
-// import React from 'react';
-// import Link from 'next/link';
-// // import "../globals.css";
-
-// const NavLinks = () => {
-
-//   // const Catalogue = [
-//   //   { name: 'Paintings', route: '/catalogue/paintings' },
-//   //   { name: 'Prints', route: '/catalogue/prints' },
-//   //   { name: 'Merch', route: '/catalogue/merch' },
-//   // ];
-
-//   const links = [
-//     { name: 'About Me', route: '#about' },
-//     { name: 'Blog', route: '#blog' },
-//     {name: 'Cafe', route: '#cafe'},
-//     { name: 'Contact Us', route: '#contact' },
-//     // { name: 'Catalogue', route: '#', submenu: true, sublinks: Catalogue },
-//   ];
-
-//   return (
-//     <>
-//       {links.map((link, index) => (
-//         <div key={index}>
-//           <div className='md:cursor-pointer group'>
-//             <Link href={link.route}>
-//               <h1 className="navbar-text">{link.name}</h1>
-//             </Link>
-//             {link.submenu && (
-//               <div className='w-[70%] md:w-auto absolute top-10 md:top-20 hidden group-hover:block hover:block'>
-//                 <div className='w-full p-1 grid grid-rows gap-1'>
-//                   {link.sublinks.map((mysublinks, subIndex) => (
-//                     <div key={subIndex} className='p-1'>
-//                       {/* <Link href={mysublinks.route}> */}
-//                         <h1 className='navbar-text-options'>{mysublinks.name}</h1>
-//                       {/* </Link> */}
-//                     </div>
-//                   ))}
-//                 </div>
-//               </div>
-//             )}
-//           </div>
-//         </div>
-//       ))}
-//     </>
-//   );
-// }
-
-// export default NavLinks;
-
-
-
-import { Link } from "react-router-dom";
-
 function NavLinks() {
   const links = [
-    { name: "About Me", route: "#about" },
+    { name: "About Us", route: "#about" },
     { name: "Blog", route: "#blog" },
     { name: "Cafe", route: "#cafe" },
     { name: "Contact Us", route: "#contact" },
   ];
 
   return (
-    <>
+    <ul className="flex items-center gap-6 text-sm font-medium">
       {links.map((link, index) => (
-        <div key={index}>
-          <div className="md:cursor-pointer group">
-            <Link to={link.route}>
-              <h1 className="navbar-text">{link.name}</h1>
-            </Link>
-          </div>
-        </div>
+        <li key={index}>
+          <a
+            href={link.route}
+            className="text-purple-600 hover:text-purple-800 transition"
+          >
+            {link.name}
+          </a>
+        </li>
       ))}
-    </>
+    </ul>
   );
 }
 

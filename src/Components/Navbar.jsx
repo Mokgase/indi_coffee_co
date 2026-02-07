@@ -1,22 +1,3 @@
-// // import { Link } from "react-router-dom";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// export default function Navbar() {
-//   return (
-//     <nav className="bg-zinc-900 text-white px-6 py-4 flex justify-between">
-//       <div className="flex gap-6 text-sm">
-//         <BrowserRouter>
-//           <Routes>
-//             <Route path="/about" element={<About/>}/>
-//             <Route path="/blog" element={<Blog />} />
-//             <Route path="/cafe" element={<Cafe />} />
-//             <Route path="/contact" element={<Contact />} />
-//           </Routes>
-//         </BrowserRouter>
-//       </div>
-//     </nav>
-//   );
-// }
 
 "use client"
 import React, { useEffect, useState } from 'react';
@@ -50,7 +31,8 @@ const NavBar = () => {
 
   return (
     <div className={`w-full sticky top-0 z-50 transition-all duration-300 ${scroll ? 'bg-gray-200 shadow-md' : 'bg-transparent'}`}>
-      <nav className="md:flex items-center justify-between p-2 md:py-3 md:px-6 rounded-md backdrop-filter backdrop-blur-sm bg-opacity-50"> 
+      {/* <nav className="md:flex items-center justify-between p-2 md:py-3 md:px-6 rounded-md backdrop-filter backdrop-blur-sm bg-opacity-50">  */}
+      <nav className="flex items-center justify-start gap-10 p-3 bg-white shadow-md">
       <div className="navbar flex justify-between items-center w-full">
         <a href='#'>
           <img
@@ -66,7 +48,7 @@ const NavBar = () => {
           </div>
         </div>
         {/* Desktop */}
-        <div className="hidden md:flex uppercase items-center gap-40 px-5">
+        <div className="hidden md:flex items-center gap-8 ml-6">
           <NavLinks />
         </div>
         {/* Mobile Nav */}
