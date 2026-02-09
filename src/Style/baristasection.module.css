@@ -137,7 +137,7 @@
   }
     }
    
-  @media screen and (min-width: 769px) and (max-width: 1444px) { 
+  @media (min-width: 1025px) and (max-width:2000px) {
   .p{
     font-family: 'Poppins';
     color: #1A1B25;
@@ -160,7 +160,7 @@
     text-decoration: none;
     color: black;
     font-size: 40px;
-    margin-right: 55rem;
+    margin-right: 81rem;
   }
 
   .barista_name{
