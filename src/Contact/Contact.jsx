@@ -45,6 +45,7 @@ const form = useRef();
       />   */}
       <div className={styles.container}>
         <h1 className={styles.h1}>Let's <span className={styles.color}>Have</span> Coffee</h1>
+        {/* <hr className={styles.line} /> */}
           <form className={styles.formcontainer} ref={form} onSubmit={sendEmail}> 
               
                 <div className={styles.column1}>
