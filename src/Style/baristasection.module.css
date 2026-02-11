@@ -18,17 +18,22 @@
     text-align: center;
   }
   
-  .h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    margin: 1px;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 40px;
-    margin-right: 60rem;
-  }
+.h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  margin: 1px;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #6C596E;
+  font-size: 40px;
+  margin-left: -53rem;
+}
+
+.color{
+  color: black;
+}
+
 
   .barista_name{
     color: #6C596E;
@@ -93,18 +98,22 @@
 }
 
   @media screen and (min-width: 500px) and (max-width: 768px) {
-    .h1{
-      font-family: 'Roboto', sans-serif;
-      color: black;
-      font-weight: bold;
-      margin: 1px;
-      padding: 1px;
-      text-align: center;
-      text-decoration: none;
-      color: black;
-      font-size: 40px;
-      margin-left: -12rem;
-    }
+.h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  margin: 1px;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #6C596E;
+  font-size: 40px;
+  margin-left: -53rem;
+}
+
+.color{
+  color: black;
+}
+
 
     .line{
       border: none;
@@ -151,17 +160,21 @@
     text-align: center;
   }
   
-  .h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    margin: 1px;
-    padding: 20px;
-    /* text-align: center; */
-    text-decoration: none;
-    color: black;
-    font-size: 40px;
-    margin-right: 81rem;
-  }
+  .h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  margin: 1px;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #6C596E;
+  font-size: 40px;
+  margin-left: -53rem;
+}
+
+.color{
+  color: black;
+}
 
   .barista_name{
     color: #6C596E;

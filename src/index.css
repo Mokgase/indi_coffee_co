@@ -1,4 +1,42 @@
 :root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Utility for scroll offset anchors */
+.scroll-offset {
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* //////////////////////////////////////////////////////// */
+
+:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -33,12 +71,7 @@ html {
   }
 }
 
-.topnav{
-  display: none;
-  gap: 5rem;
-  padding: 50%;
-  
-}
+
 
 
 a {
@@ -58,29 +91,7 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -90,29 +101,9 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
-@media (min-width: 768px) {
-  .topnav {
-    display: flex; /* md:flex */
-    justify-content: space-between;
-  }
-}
 
-.topnav {
-  text-transform: uppercase; /* uppercase */
-  align-items: center; /* items-center */
-  gap: 1rem; /* gap-8 */
-  padding: 3rem; /* px-8 */
-}
 
-.navbar{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-weight: 500; /* Medium font weight */
-  justify-content: space-between; 
- }
+
+

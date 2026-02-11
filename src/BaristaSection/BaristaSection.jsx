@@ -9,7 +9,7 @@ const BaristaSection = () => {
       <title>BaristaSection</title>
       <meta name="BaristaSection" content="This the Barista Section page"/>
       <div className={styles.container}>
-        <h1 className={styles.h1}>MEET YOUR BARISTAS</h1>
+                <h1 className={styles.h1}>Meet <span className={styles.color}>Your</span> Baristas</h1>
         <hr className={styles.line} />
         <div className={styles.images_grid}>
           {catalogueBaristas.map((barista, index) => (

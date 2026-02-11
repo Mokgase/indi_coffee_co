@@ -1,66 +1,81 @@
-
 "use client"
 import React, { useEffect, useState } from 'react';
-import NavLinks from './NavLinks';
-import '../index.css';
-import i_logo from '../../public/Assets/images/i_logo.png'
+import styles from '../Style/navbar.module.css';
 
 const NavBar = () => {
-  const [open, setOpen] = useState(false);
-  const [scroll, setScroll] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setOpen(!open);
-  };
+  const navLinks = [
+    { name: "About Us", route: "#about" },
+    { name: "Blog", route: "#blog" },
+    { name: "Cafe", route: "#cafe" },
+    { name: "Contact Us", route: "#contact" },
+  ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-    };
-
+    const handleScroll = () => setHasScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLinkClick = () => setIsMenuOpen(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
+    return () => { document.body.style.overflow = 'unset'; };
+  }, [isMenuOpen]);
+
   return (
-    <div className={`w-full sticky top-0 z-50 transition-all duration-300 ${scroll ? 'bg-gray-200 shadow-md' : 'bg-transparent'}`}>
-      {/* <nav className="md:flex items-center justify-between p-2 md:py-3 md:px-6 rounded-md backdrop-filter backdrop-blur-sm bg-opacity-50">  */}
-      <nav className="flex items-center justify-start gap-10 p-3 bg-white shadow-md">
-      <div className="navbar flex justify-between items-center w-full">
-        <a href='#'>
-          <img
-          alt='navbar-logo'
-          src={i_logo}
-          placeholder='blur'
-          width={60}
-          height={60}
-        />
-        </a>
-          <div className="md:hidden text-3xl cursor-pointer" onClick={toggleMenu}>
-            <ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
-          </div>
-        </div>
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8 ml-6">
-          <NavLinks />
-        </div>
-        {/* Mobile Nav */}
-        <div className={`md:hidden absolute w-full transition-all duration-1000 ${open ? 'left-0' : 'left-[-100%]'}`}>
-          {open && (
-            <ul className="w-full h-[25vh] p-10 bg-gray-200 gap-5">
-              <NavLinks />
-            </ul>
-          )}
+    <>
+      {/* Main Navbar */}
+      <nav className={`${styles.navbar} ${hasScrolled ? styles.navbarScrolled : ''}`}>
+        <div className={styles.navbarContainer}>
+          {/* Logo */}
+          <a href="#" className={styles.navbarLogo}>
+            LOGO
+          </a>
+
+          {/* Hamburger Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className={styles.hamburgerButton}
+            aria-label="Toggle menu"
+          >
+            <span className={`${styles.hamburgerLine} ${isMenuOpen ? styles.lineTopActive : ''}`} />
+            <span className={`${styles.hamburgerLine} ${isMenuOpen ? styles.lineMiddleActive : ''}`} />
+            <span className={`${styles.hamburgerLine} ${isMenuOpen ? styles.lineBottomActive : ''}`} />
+          </button>
         </div>
       </nav>
-    </div>
+
+      {/* Fullscreen Menu Overlay */}
+      <div className={`${styles.menuOverlay} ${isMenuOpen ? styles.menuOverlayActive : ''}`}>
+        <div className={styles.menuContent}>
+          <ul className={styles.menuList}>
+            {navLinks.map((link, index) => (
+              <li 
+                key={link.name}
+                className={`${styles.menuItem} ${isMenuOpen ? styles.menuItemActive : ''}`}
+                style={{ 
+                  transitionDelay: isMenuOpen ? `${index * 100}ms` : '0ms' 
+                }}
+              >
+                <a
+                  href={link.route}
+                  onClick={handleLinkClick}
+                  className={styles.menuLink}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+     
+      </div>
+    </>
   );
 };
 

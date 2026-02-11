@@ -18,7 +18,7 @@ const form = useRef();
         'template_gtluvs6', 
         form.current,
         'JLyAuDRbEpuDJRgII',
-      )
+      ) 
       .then(
         (result) => {
           console.log(result.text);
