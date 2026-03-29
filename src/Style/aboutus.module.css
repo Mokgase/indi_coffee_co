@@ -5,6 +5,11 @@
     font-style: normal;
   }
 
+.container {
+  overflow: hidden;
+  padding: 20px;
+}
+
 .column1{
     float:left;
     width: 25%;
@@ -24,10 +29,8 @@
 .line{
   border: none;
   border-top: 4px solid #333;
-  margin: 10px;
-  width: 90%;
-  /* margin-top: 5rem; */
-  margin-left: 4.5rem;
+  width: 100%;
+  margin: 0 0 10px 0;
 }
 .h1, .h2{
     font-family: 'Roboto', sans-serif;
@@ -35,15 +38,19 @@
 }
 
 .h1{
+  font-family: 'Roboto', sans-serif;
   font-weight: bolder;
   margin: 1px;
-  padding: 1px;
-  text-align: center;
+  padding: 25px;
+  text-align: right;
   text-decoration: none;
-  color: black;
+  color: #6C596E;
   font-size: 40px;
-  margin-left: 60rem;
-  }
+}
+
+.color{
+  color: black;
+}
   
   .h2{
     font-weight: bolder;
@@ -99,14 +106,14 @@
     }
     
     .h1{
-      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
       margin: 1px;
-      padding: 1px;
-      text-align: center;
+      padding: 25px;
+      text-align: right;
       text-decoration: none;
-      color: black;
+      color: #6C596E;
       font-size: 40px;
-      margin-left: 10rem;
       }
 
       .h2{

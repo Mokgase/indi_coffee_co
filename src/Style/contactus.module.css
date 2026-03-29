@@ -7,7 +7,8 @@
 
 
 .container{
-  margin-top: 40rem;
+  margin-top: 4rem;
+  padding: 20px;
 }
 
   .line {
@@ -23,11 +24,10 @@
   font-weight: bolder;
   margin: 1px;
   padding: 25px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   color: #6C596E;
   font-size: 40px;
-  margin-left: -53rem;
 }
 
 .color{
@@ -92,10 +92,9 @@
   }
 
   .button{
-    position: absolute;
-    left: 120%;
-    align-items: center;
-    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
 
   .inputs {
@@ -389,7 +388,8 @@
    
   @media (min-width: 1025px) and (max-width:2000px) {
     .container{
-      margin-top: 40rem;
+      margin-top: 4rem;
+      padding: 20px;
     }
 
     .h1{
@@ -397,11 +397,10 @@
       font-weight: bolder;
       margin: 1px;
       padding: 25px;
-      text-align: center;
+      text-align: right;
       text-decoration: none;
       color: #6C596E;
       font-size: 40px;
-      margin-left: -84rem;
     }
 
 .color{
@@ -466,10 +465,9 @@
   }
 
   .button{
-    position: absolute;
-    left: 150%;
-    align-items: center;
-    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
 
   .inputs {

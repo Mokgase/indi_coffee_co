@@ -15,9 +15,10 @@
 
   .container {
     padding: 20px;
+    padding-top: 90px;
     text-align: center;
   }
-  
+
 .h1{
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
@@ -27,7 +28,8 @@
   text-decoration: none;
   color: #6C596E;
   font-size: 40px;
-  margin-left: -53rem;
+  margin-left: auto;
+  text-align: right;
 }
 
 .color{
@@ -107,7 +109,8 @@
   text-decoration: none;
   color: #6C596E;
   font-size: 40px;
-  margin-left: -53rem;
+  margin-left: auto;
+  text-align: right;
 }
 
 .color{
@@ -157,9 +160,10 @@
 
   .container {
     padding: 20px;
+    padding-top: 90px;
     text-align: center;
   }
-  
+
   .h1{
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
@@ -169,7 +173,8 @@
   text-decoration: none;
   color: #6C596E;
   font-size: 40px;
-  margin-left: -53rem;
+  margin-left: auto;
+  text-align: right;
 }
 
 .color{

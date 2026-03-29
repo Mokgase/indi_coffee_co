@@ -1,23 +1,15 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../Style/navbar.module.css';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
 
   const navLinks = [
     { name: "About Us", route: "#about" },
     { name: "Blog", route: "#blog" },
     { name: "Cafe", route: "#cafe" },
-    { name: "Contact Us", route: "#contact" },
   ];
-
-  useEffect(() => {
-    const handleScroll = () => setHasScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleLinkClick = () => setIsMenuOpen(false);
 
@@ -29,14 +21,26 @@ const NavBar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className={`${styles.navbar} ${hasScrolled ? styles.navbarScrolled : ''}`}>
+      <nav className={styles.navbar}>
         <div className={styles.navbarContainer}>
           {/* Logo */}
           <a href="#" className={styles.navbarLogo}>
-            LOGO
+            <img src="/Assets/images/i_logo.png" alt="Indi Coffee Co" />
           </a>
 
-          {/* Hamburger Button */}
+          {/* Desktop Nav Links */}
+          <ul className={styles.navLinks}>
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a href={link.route} className={styles.navLink}>{link.name}</a>
+              </li>
+            ))}
+          </ul>
+
+          {/* CTA Button */}
+          <a href="#contact" className={styles.ctaButton}>Contact Us</a>
+
+          {/* Hamburger Button (mobile) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={styles.hamburgerButton}
@@ -49,31 +53,23 @@ const NavBar = () => {
         </div>
       </nav>
 
-      {/* Fullscreen Menu Overlay */}
+      {/* Fullscreen Menu Overlay (mobile) */}
       <div className={`${styles.menuOverlay} ${isMenuOpen ? styles.menuOverlayActive : ''}`}>
         <div className={styles.menuContent}>
           <ul className={styles.menuList}>
-            {navLinks.map((link, index) => (
-              <li 
+            {[...navLinks, { name: "Contact Us", route: "#contact" }].map((link, index) => (
+              <li
                 key={link.name}
                 className={`${styles.menuItem} ${isMenuOpen ? styles.menuItemActive : ''}`}
-                style={{ 
-                  transitionDelay: isMenuOpen ? `${index * 100}ms` : '0ms' 
-                }}
+                style={{ transitionDelay: isMenuOpen ? `${index * 100}ms` : '0ms' }}
               >
-                <a
-                  href={link.route}
-                  onClick={handleLinkClick}
-                  className={styles.menuLink}
-                >
+                <a href={link.route} onClick={handleLinkClick} className={styles.menuLink}>
                   {link.name}
                 </a>
               </li>
             ))}
           </ul>
         </div>
-
-     
       </div>
     </>
   );
