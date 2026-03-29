@@ -45,7 +45,7 @@ const form = useRef();
       />   */}
       <div className={styles.container}>
         <h1 className={styles.h1}>Let's <span className={styles.color}>Have</span> Coffee</h1>
-        {/* <hr className={styles.line} /> */}
+        <hr className={styles.line} />
           <form className={styles.formcontainer} ref={form} onSubmit={sendEmail}> 
               
                 <div className={styles.column1}>
@@ -95,10 +95,8 @@ const form = useRef();
                     className={styles.inputs}
                    />
                 </div>
-                <div className={styles.column3}>
-                  <div className={styles.button}>
+                <div className={styles.button}>
                   <Button type={'submit'} value={'Send'} text={'Send'}/>
-                  </div>
                 </div>
             </form> 
     </div>
