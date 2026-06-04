@@ -7,7 +7,7 @@ import Tshepiso from '../../public/Assets/images/Tshepiso.png';
 
 const Team = () => {
   return (
-        <div id='about' className='w-full h-full'>
+        <div id='team' className='w-full h-full'>
         <div className={styles.container}>
               <h1 className={styles.h1}>Meet <span className={styles.color}>our </span>Team</h1>
             <hr className={styles.line} />

@@ -10,6 +10,8 @@ const NavBar = () => {
     { name: "Blog", route: "#blog" },
     { name: "Cafe", route: "#cafe" },
     { name: "Team", route: "#team" },
+    { name: "Products", route: "#products" },
+    { name: "Contact Us", route: "#contact" },
   ];
 
   const handleLinkClick = () => setIsMenuOpen(false);
@@ -39,7 +41,7 @@ const NavBar = () => {
           </ul>
 
           {/* CTA Button */}
-          <a href="#contact" className={styles.ctaButton}>Contact Us</a>
+          {/* <a href="#contact" className={styles.ctaButton}>Contact Us</a> */}
 
           {/* Hamburger Button (mobile) */}
           <button

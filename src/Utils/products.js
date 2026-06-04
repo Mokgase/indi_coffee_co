@@ -1,0 +1,16 @@
+export default [
+    {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+    // {src: '/Assets/images/coffeepack1.png', coffeetype:'blend', coffeetitle:'Crushed Rock Roast', coffeenotes:'cherry, blackberry,dark chocolate'},
+];
