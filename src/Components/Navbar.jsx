@@ -9,6 +9,7 @@ const NavBar = () => {
     { name: "About Us", route: "#about" },
     { name: "Blog", route: "#blog" },
     { name: "Cafe", route: "#cafe" },
+    { name: "Team", route: "#team" },
   ];
 
   const handleLinkClick = () => setIsMenuOpen(false);

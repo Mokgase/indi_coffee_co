@@ -5,6 +5,11 @@
     font-style: normal;
   }
 
+.container {
+  overflow: hidden;
+  padding: 20px;
+}
+
 .column1{
     float:left;
     width: 25%;

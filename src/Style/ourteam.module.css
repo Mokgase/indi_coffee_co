@@ -24,6 +24,33 @@
   align-items: center;
 }
 
+.column1a{
+    width: 40%;
+    padding: 2%;
+    margin-right: -85rem;
+}
+
+.column2a{
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column1a{
+    width: 40%;
+    padding: 2%;
+    margin-right: -90rem;
+}
+
+.column2a{
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .columns {
   display: flex;
   flex-direction: row;

@@ -8,6 +8,7 @@ const About = () => {
         <div className={styles.container}>
               <h1 className={styles.h1}>About <span className={styles.color}>Us</span></h1>
             <hr className={styles.line} />
+          <div className={styles.columns}>
           <div className={styles.column1}>
             <div className={styles.heading}>
               <h2 className ={styles.h2}></h2>
@@ -30,10 +31,13 @@ const About = () => {
           <div className={styles.column2}>
             <img src={aboutus} alt="logo" width={310} height={400} placeholder="blur" className="w-[80%] h-auto" />
             <div className={styles.text}>
-              <p className={styles.p1}>Founded by</p> 
-              <p className={styles.p1}>Thapelo Mmakola &</p> 
-              <p className={styles.p1}>Thabang Mmakola</p>
+              <div className={styles.subheading}>
+                <p className={styles.p1}>Founded by</p>
+                <p className={styles.p1}>Thapelo Mmakola &</p>
+                <p className={styles.p1}>Thabang Mmakola</p>
+              </div>
             </div>
+          </div>
           </div>
          </div>
          </div>
