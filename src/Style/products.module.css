@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'OpenSauceSans';
-  src: url("../../../public/Assets/fonts/OpenSauceSans-Black.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .container {
   padding: 20px;
   padding-top: 90px;
@@ -17,7 +10,6 @@
   margin: 1px;
   padding: 25px;
   text-align: right;
-  text-decoration: none;
   color: #6C596E;
   font-size: 40px;
   margin-left: auto;
@@ -37,48 +29,273 @@
 .images_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
   padding: 20px;
+}
+
+/* Card */
+.coffee_card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: visible;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Image section */
+.image_wrapper {
+  position: relative;
+  width: 100%;
 }
 
 .grid_image {
   width: 100%;
-  height: 220px;
+  height: 340px;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
 }
 
+.badge_exclusive {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #111;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  padding: 6px 13px;
+  border-radius: 7px;
+  backdrop-filter: blur(3px);
+}
+
+.badge_new_drop {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #111;
+  background: rgba(255, 255, 255, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  backdrop-filter: blur(3px);
+  line-height: 1.3;
+}
+
+/* Info section */
 .coffee_info {
-  padding: 14px 16px 18px;
-  text-align: left;
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  flex: 1;
+}
+
+.meta_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .coffee_type {
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #6C596E;
-  margin: 0 0 4px;
+  color: #111;
+  margin: 0;
+}
+
+.roast_row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.roast_label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.roast_track {
+  width: 80px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.roast_thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: #111;
+  border-radius: 50%;
+}
+
+.coffee_title_link {
+  text-decoration: none;
 }
 
 .coffee_title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: bolder;
-  color:white;
-  margin: 0 0 6px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: italic;
+  color: #111;
+  margin: 0;
+  line-height: 1.2;
+  text-align: left;
 }
 
 .coffee_notes {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
-  font-weight: normal;
-  color: #555;
-  margin: 0 0 14px;
-  font-style: italic;
+  color: #888;
+  margin: 0;
+  text-align: left;
+}
+
+/* Controls row */
+.controls_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.size_dropdown {
+  position: relative;
+}
+
+.size_btn {
+  background: transparent;
+  border: 2px solid #111;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  color: #111;
+}
+
+.chevron {
+  font-size: 16px;
+}
+
+.size_options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  background: #fff;
+  border: 2px solid #111;
+  border-radius: 12px;
+  z-index: 20;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.size_option {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  text-align: left;
+  color: #111;
+}
+
+.size_option:hover {
+  background: #f5f5f5;
+}
+
+.quantity_control {
+  display: flex;
+  align-items: center;
+  border: 2px solid #111;
+  border-radius: 50px;
+  padding: 6px 14px;
+  gap: 14px;
+  flex: 1;
+  justify-content: center;
+}
+
+.qty_btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+  color: #111;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.qty_num {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+  color: #111;
+}
+
+/* Add to Cart */
+.add_to_cart {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 4px;
+  transition: background 0.2s ease;
+}
+
+.add_to_cart:hover {
+  background: #333;
+}
+
+.cart_divider {
+  color: #666;
+  font-weight: 300;
 }
 
 /* Tablet */
@@ -86,15 +303,6 @@
   .h1 {
     font-size: 32px;
     text-align: right;
-  }
-
-  .line {
-    border: none;
-    border-top: 4px solid #333;
-    margin: 10px;
-    width: 80%;
-    margin-top: 0.1rem;
-    margin-left: 2rem;
   }
 
   .images_grid {
@@ -126,18 +334,12 @@
   }
 
   .coffee_info {
-    padding: 10px 12px 14px;
+    padding: 14px 16px 18px;
   }
 }
 
 /* Large screens */
 @media (min-width: 1025px) and (max-width: 2000px) {
-  .container {
-    padding: 20px;
-    padding-top: 90px;
-    text-align: center;
-  }
-
   .h1 {
     font-size: 40px;
     text-align: right;
@@ -145,14 +347,11 @@
 
   .images_grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 24px;
     padding: 20px;
   }
 
   .grid_image {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    height: 360px;
   }
 }

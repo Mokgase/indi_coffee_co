@@ -19,9 +19,11 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import HomePage from './Home/Home';
 import LoadingScreen from './Components/LoadingScreen'; // Import your LoadingScreen component
 import NavBar from './Components/Navbar';
+import ProductDetail from './Products/ProductDetail';
 
 
 export default function Home() {
@@ -43,7 +45,10 @@ export default function Home() {
       {isLoading ? (
         <LoadingScreen onLoadingComplete={() => setIsLoading(false)} /> // Show loader if isLoading is true
       ) : (
-        <HomePage /> // Show LandingPage once loading is complete
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+        </Routes>
       )}
     </div>
   );
