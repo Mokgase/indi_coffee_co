@@ -1,18 +1,47 @@
-export default function Hero() {
+import styles from '../Style/hero.module.css';
+
+const Hero = () => {
   return (
-    <section className="bg-zinc-800 text-white text-center py-20 px-6">
-      <h2 className="text-5xl font-bold tracking-widest leading-tight">
-        SPOK <br /> COFFEE <br /> CO
-      </h2>
+    <div id='hero' className={styles.page}>
+      <div className={styles.container}>
+        <div className={styles.text_side}>
+          <p className={styles.tag}>Specialty Coffee</p>
+          <h1 className={styles.title}>
+            INDI<br />COFFEE<br />CO
+          </h1>
+          <p className={styles.tagline}>Premium coffee by people, for people.</p>
+          <a href="#products" className={styles.cta_btn}>Shop Now</a>
+        </div>
 
-      <p className="mt-4 text-zinc-300">
-        Premium coffee by people
-      </p>
-
-      <div className="grid md:grid-cols-2 gap-4 mt-10 max-w-4xl mx-auto">
-        <div className="h-48 bg-zinc-700 rounded-xl" />
-        <div className="h-48 bg-zinc-700 rounded-xl" />
+        <div className={styles.video_side}>
+          <div className={styles.video_wrapper}>
+            <iframe
+              className={styles.video_frame1}
+              allow="fullscreen;autoplay"
+              allowFullScreen
+              src="https://streamable.com/e/fysfqf?autoplay=1&nocontrols=1"
+            />
+          </div>
+          <div className={styles.video_wrapper}>
+            <iframe
+              className={styles.video_frame2}
+              allow="fullscreen;autoplay"
+              allowFullScreen
+              src="https://streamable.com/e/fi77hn?autoplay=1&nocontrols=1"
+            />
+          </div>
+          <div className={styles.video_wrapper}>
+            <iframe
+              className={styles.video_frame3}
+              allow="fullscreen;autoplay"
+              allowFullScreen
+              src="https://streamable.com/e/19xeth?autoplay=1&nocontrols=1"
+            />
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default Hero;

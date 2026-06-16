@@ -2,6 +2,11 @@ export default [
     {
       id: 'crushed-rock-roast',
       src: '/Assets/images/coffeepack1.png',
+      images: [
+        '/Assets/images/coffeepack1.png',
+        '/Assets/images/coffeepack2.png',
+        '/Assets/images/coffeepack3.png',
+      ],
       coffeetype: 'BLEND',
       coffeetitle: 'Crushed Rock Roast',
       coffeenotes: 'Cherry • Blackberry • Dark Chocolate',
@@ -15,6 +20,12 @@ export default [
     {
       id: 'mild-moon-decaf-roast',
       src: '/Assets/images/decafpack1copy.png',
+      images: [
+        '/Assets/images/decafpack1copy.png',
+        '/Assets/images/decafpack1.png',
+        '/Assets/images/decafpack2.png',
+        '/Assets/images/decafpack3.png',
+      ],
       coffeetype: 'SINGLE ORIGIN',
       coffeetitle: 'Mild Moon decaf Roast',
       coffeenotes: 'Cacao • Vanilla • Soft Almond',
@@ -28,6 +39,11 @@ export default [
     {
       id: 'sunrise-single-origin',
       src: '/Assets/images/floralcoffeepack1.png',
+      images: [
+        '/Assets/images/floralcoffeepack1.png',
+        '/Assets/images/floralcoffeepack2.png',
+        '/Assets/images/floralcoffeepack3.png',
+      ],
       coffeetype: 'SINGLE ORIGIN',
       coffeetitle: 'Sunrise Single Origin',
       coffeenotes: 'Citrus • Honey • Almond',

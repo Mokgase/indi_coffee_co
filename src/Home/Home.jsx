@@ -7,7 +7,7 @@ import Team from '../Team/OurTeam';
 import Products from '../Products/products';
 // import StorySection from './Components/StorySection'
 import Cafe from '../Cafe/Cafe';
-// import Hero from './Components/Hero';
+import Hero from '../Components/Hero';
 
 
 const HomePage = (Component, pageProps ) => {
@@ -19,8 +19,8 @@ const HomePage = (Component, pageProps ) => {
         <title>Homepage</title>
         <meta name="Homepage" content="This is the Homepage as know as Landing page" />
     </head>
-    {/* <Hero/>
-    <StorySection/>  */}
+    <Hero/>
+    {/* <StorySection/>  */}
     <BaristaSection/>
     <Cafe/>
     <About/>

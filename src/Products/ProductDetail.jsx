@@ -10,6 +10,7 @@ const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState((coffee?.sizes || ['230g'])[0]);
   const [sizeOpen, setSizeOpen] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
 
   if (!coffee) {
     return (
@@ -22,6 +23,11 @@ const ProductDetail = () => {
     );
   }
 
+  const images = coffee.images || [coffee.src];
+
+  const prevImage = () => setImageIndex((i) => (i - 1 + images.length) % images.length);
+  const nextImage = () => setImageIndex((i) => (i + 1) % images.length);
+
   return (
     <div className={styles.page}>
       <Link to="/#products" className={styles.back_link}>← Back to Products</Link>
@@ -30,7 +36,27 @@ const ProductDetail = () => {
           {coffee.badge && (
             <span className={styles.badge_exclusive}>{coffee.badge}</span>
           )}
-          <img src={coffee.src} alt={coffee.coffeetitle} className={styles.product_image} />
+          <div className={styles.slider}>
+            {images.length > 1 && (
+              <button className={styles.slider_btn} onClick={prevImage} aria-label="Previous image">&#8592;</button>
+            )}
+            <img src={images[imageIndex]} alt={coffee.coffeetitle} className={styles.product_image} />
+            {images.length > 1 && (
+              <button className={styles.slider_btn} onClick={nextImage} aria-label="Next image">&#8594;</button>
+            )}
+          </div>
+          {images.length > 1 && (
+            <div className={styles.slider_dots}>
+              {images.map((_, i) => (
+                <button
+                  key={i}
+                  className={`${styles.dot} ${i === imageIndex ? styles.dot_active : ''}`}
+                  onClick={() => setImageIndex(i)}
+                  aria-label={`Image ${i + 1}`}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div className={styles.details_section}>
@@ -83,7 +109,6 @@ const ProductDetail = () => {
           </button>
 
           <div className={styles.impact_box}>
-            <span className={styles.impact_icon}>🌍</span>
             <p className={styles.impact_text}>
               <span className={styles.impact_title}>Choose Your Impact</span>
               At no extra cost, 1% of every order will be donated to support a nonprofit you choose. Add to cart to choose.

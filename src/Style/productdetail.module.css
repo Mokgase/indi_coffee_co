@@ -55,11 +55,60 @@
   backdrop-filter: blur(3px);
 }
 
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.slider_btn {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #111;
+  transition: background 0.2s ease;
+}
+
+.slider_btn:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
 .product_image {
   width: 100%;
-  max-width: 460px;
+  max-width: 360px;
   display: block;
-  margin: 40px auto 0;
+}
+
+.slider_dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(17, 17, 17, 0.25);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.dot_active {
+  background: #111;
 }
 
 /* Right: details */
