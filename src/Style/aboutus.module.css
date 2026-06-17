@@ -32,13 +32,6 @@
   gap: 2rem;
 }
 
-  .line {
-    border: none;
-    border-top: 4px solid #333;
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
-
 .h1, .h2{
     font-family: 'Roboto', sans-serif;
     color: black;
@@ -51,7 +44,7 @@
   padding: 25px;
   text-align: right;
   text-decoration: none;
-  color: #6C596E;
+  color: #F4B266;
   font-size: 40px;
 }
 
@@ -68,7 +61,7 @@
   }
   
   .p1{
-    color: #6E6B7D;
+    color: black;
   }
   .p{
     font-family: 'Poppins';
@@ -101,15 +94,6 @@
         padding: 2%;
         margin-top: 1rem;
       }
-      .line{
-        border: none;
-        border-top: 4px solid #333;
-        margin: 10px;
-        width: 80%;
-        margin-top: 0.1rem;
-        margin-left: 2rem;
-      }
-
       .h1, .h2{
         font-family: 'Roboto', sans-serif;
         color: black;

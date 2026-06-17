@@ -10,7 +10,6 @@ const Team = () => {
         <div id='team' className='w-full h-full'>
         <div className={styles.container}>
               <h1 className={styles.h1}>Meet <span className={styles.color}>our </span>Team</h1>
-            <hr className={styles.line} />
           <div className={styles.columns}>
           <div className={styles.column1}>
             <div className={styles.heading}>

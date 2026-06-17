@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #111;
+  box-sizing: border-box;
+}
+
 .p{
   font-family: 'Poppins';
   color: #1A1B25;
@@ -26,7 +33,7 @@
   padding: 25px;
   text-align: center;
   text-decoration: none;
-  color: #6C596E;
+  color: #F4B266;
   font-size: 40px;
   margin-left: auto;
   text-align: right;
@@ -36,9 +43,26 @@
   color: black;
 }
 
+.video_hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Cover the viewport with the 9:16 video — no black bars */
+  width: max(100vw, calc(100vh * 9 / 16));
+  height: max(100vh, calc(100vw * 16 / 9));
+  transform: translate(-50%, -50%);
+  border: none;
+}
 
   .barista_name{
-    color: #6C596E;
+    color: #F4B266;
     font-weight: bolder;
   }
 
@@ -50,21 +74,13 @@
     color: black;
   }
   
-  .line {
-    width: 100%;
-    margin: 0 auto;
-    border: 4px solid #333;
-    width: 100%;
-    margin-top: -1rem
-  }
-  
   .images_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
   }
-  
+
   .grid_image {
     width: 100%;
     height: auto;
@@ -72,7 +88,7 @@
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .grid_image:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -89,14 +105,14 @@
     margin: 0 auto;
     margin-left: 10rem;
 }
-  
+
 .column1{
      margin-right: 50%;
 }
 
 .column2{
   margin-left: 50%;
-  
+
 }
 
   @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -107,7 +123,7 @@
   padding: 25px;
   text-align: center;
   text-decoration: none;
-  color: #6C596E;
+  color: #F4B266;
   font-size: 40px;
   margin-left: auto;
   text-align: right;
@@ -117,15 +133,6 @@
   color: black;
 }
 
-
-    .line{
-      border: none;
-      border-top: 4px solid #333;
-      margin: 10px;
-      width: 80%;
-      margin-top: 0.1rem;
-      margin-left: 2rem;
-    }
 
     .images_grid {
       display: grid;
@@ -160,7 +167,6 @@
 
   .container {
     padding: 20px;
-    padding-top: 90px;
     text-align: center;
   }
 
@@ -171,18 +177,18 @@
   padding: 25px;
   text-align: center;
   text-decoration: none;
-  color: #6C596E;
+  color: #F4B266;
   font-size: 40px;
   margin-left: auto;
   text-align: right;
 }
 
 .color{
-  color: black;
+  color: white;
 }
 
   .barista_name{
-    color: #6C596E;
+    color: #F4B266;
     font-weight: bolder;
   }
 
@@ -193,22 +199,14 @@
   .painting_price{
     color: black;
   }
-  
-  .line {
-    width: 100%;
-    margin: 0 auto;
-    border: 4px solid #333;
-    width: 100%;
-    margin-top: -1rem
-  }
-  
+
   .images_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
   }
-  
+
   .grid_image {
     width: 100%;
     height: auto;
@@ -216,7 +214,7 @@
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .grid_image:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -233,14 +231,14 @@
     margin: 0 auto;
     margin-left: 10rem;
 }
-  
+
 .column1{
      margin-right: 50%;
 }
 
 .column2{
   margin-left: 50%;
-  
+
 }
   }
     

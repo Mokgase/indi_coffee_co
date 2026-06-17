@@ -88,7 +88,6 @@ const Products = () => {
     <div id='products' className='w-full h-full'>
       <div className={styles.container}>
         <h1 className={styles.h1}>Meet <span className={styles.color}>Your</span> Coffee</h1>
-        <hr className={styles.line} />
         <div className={styles.images_grid}>
           {coffeeCatalogue.map((coffee, index) => (
             <ProductCard key={index} coffee={coffee} />

@@ -5,12 +5,19 @@ import catalogueBaristas from '../Utils/baristas';
 
 const BaristaSection = () => {
   return (
-    <div id='BaristaSection' className='w-full h-full'>
+    <div id='BaristaSection' className={styles.page}>
       <title>BaristaSection</title>
       <meta name="BaristaSection" content="This the Barista Section page"/>
+      <div className={styles.video_hero}>
+        <iframe
+          className={styles.video_frame}
+          allow="fullscreen;autoplay"
+          allowFullScreen
+          src="https://streamable.com/e/grw66v?autoplay=1&nocontrols=1"
+        />
+      </div>
       <div className={styles.container}>
-                <h1 className={styles.h1}>Meet <span className={styles.color}>Your</span> Baristas</h1>
-        <hr className={styles.line} />
+        <h1 className={styles.h1}>Meet <span className={styles.color}>Your</span> Baristas</h1>
         <div className={styles.images_grid}>
           {catalogueBaristas.map((barista, index) => (
             <div key={index} className={styles.barista_card}>
