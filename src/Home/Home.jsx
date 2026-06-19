@@ -10,8 +10,8 @@ import Cafe from '../Cafe/Cafe';
 import Hero from '../Components/Hero';
 
 
-const HomePage = (Component, pageProps ) => {
-    return (  
+const HomePage = () => {
+    return (
       <div>
       {/* // <div className={styles.container}>  */}
      {/* <div className={`w-full h-full flex flex-col justify-center items-center ${styles.noHorizontalScroll}`}/>  */}
@@ -27,7 +27,7 @@ const HomePage = (Component, pageProps ) => {
     <Team/>
     <Products/>
     <Contact/>
-    <Footer /> 
+    <Footer />
     </div>
   );
 };

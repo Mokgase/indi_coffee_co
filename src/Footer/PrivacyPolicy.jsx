@@ -6,12 +6,12 @@ const PrivacyPolicy = () => {
     <div id='privacypolicy' className="max-w-3xl mx-auto p-6 text-gray-800">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="text-sm text-gray-600">Effective Date: [Insert Date]</p>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">1. Introduction</h2>
         <p>Welcome to Indi Coffee Co. We are committed to protecting your privacy and ensuring that your personal information is handled securely and responsibly. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our website (<a href="https://indicoffeeco.co.za" className="text-blue-600 underline">https://indicoffeeco.co.za</a>) and services.</p>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">2. Information We Collect</h2>
         <ul className="list-disc pl-5">
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
           <li><strong>Cookies and Tracking Technologies:</strong> We use cookies to improve user experience and analyze website traffic.</li>
         </ul>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">3. How We Use Your Information</h2>
         <ul className="list-disc pl-5">
@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
           <li>To comply with legal obligations.</li>
         </ul>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">4. How We Share Your Information</h2>
         <ul className="list-disc pl-5">
@@ -41,12 +41,12 @@ const PrivacyPolicy = () => {
           <li><strong>Business Transfers:</strong> In case of a merger or acquisition, your information may be transferred.</li>
         </ul>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">5. Data Security</h2>
         <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure.</p>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">6. Your Rights and Choices</h2>
         <p>Depending on your location, you may have the right to:</p>
@@ -57,22 +57,22 @@ const PrivacyPolicy = () => {
         </ul>
         <p>To exercise your rights, please contact us at [Insert Contact Email].</p>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">7. Third-Party Links</h2>
         <p>Our website may contain links to third-party websites. We are not responsible for their privacy practices.</p>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">8. Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy periodically. Any changes will be posted on this page with the updated effective date.</p>
       </div>
-      
+
       <div className="mt-6">
         <h2 className="text-xl font-semibold">9. Contact Us</h2>
         <p>If you have any questions, contact us at:</p>
         <p><strong>Website:</strong> <a href="https://indicoffeeco.co.za" className="text-blue-600 underline">https://indicoffeeco.co.za</a></p>
-      
+
         <p><strong>Address:</strong> Pretoria, Gauteng, South Africa</p>
       </div>
 

@@ -46,13 +46,13 @@
 @media (max-width: 768px) {
   .card{
     height: auto;
-    
+
   }
 
   .column1{
     width: 250%;
     }
-  
+
   .column2{
     width: 250%;
   }
@@ -73,7 +73,7 @@
     margin-top: 0.1rem;
     margin-left: 3rem;
   }
- 
+
   .h1{
     font-family: 'Roboto', sans-serif;
     color: black;
@@ -95,7 +95,7 @@
       font-family: 'Poppins';
       color: #1A1B25;
       font-weight: normal;
-      text-align: left;  
+      text-align: left;
     }
 
     .button{
@@ -104,15 +104,12 @@
 
     }
     }
-   
-     @media (max-width: 1024px) { 
-      
+
+     @media (max-width: 1024px) {
+
     }
-    
+
     @media (min-width: 1025px) {
-    
-    
+
+
     }
-
-
-

@@ -1,4 +1,4 @@
-import aboutus from '../../public/Assets/images/aboutUs.png';
+// import aboutus from '../../public/Assets/images/aboutUs.png';
 import styles from '../Style/ourteam.module.css';
 import Jabulani from '../../public/Assets/images/Jabulani.png';
 import Sean from '../../public/Assets/images/Sean.png';
@@ -7,7 +7,15 @@ import Tshepiso from '../../public/Assets/images/Tshepiso.png';
 
 const Team = () => {
   return (
-        <div id='team' className='w-full h-full'>
+        <div id='team' className={styles.page}>
+          <div className={styles.video_hero}>
+                  <iframe
+                    className={styles.video_frame}
+                    allow="fullscreen;autoplay"
+                    allowFullScreen
+                    src="https://streamable.com/e/u01l50?autoplay=1&nocontrols=1"
+                  />
+                </div>
         <div className={styles.container}>
               <h1 className={styles.h1}>Meet <span className={styles.color}>our </span>Team</h1>
           <div className={styles.columns}>
@@ -17,15 +25,15 @@ const Team = () => {
             </div>
             <div className={styles.text}>
               <p className={styles.p1}>
-                Jabulani Skhosana has been working as a Barista at Indi Coffee Co, 
-                where he has developed strong skills in coffee preparation, customer service, and maintaining consistent quality in every cup served. 
-                Through daily hands-on experience and dedication to his craft, he has grown into a reliable and confident member of the team, 
+                Jabulani Skhosana has been working as a Barista at Indi Coffee Co,
+                where he has developed strong skills in coffee preparation, customer service, and maintaining consistent quality in every cup served.
+                Through daily hands-on experience and dedication to his craft, he has grown into a reliable and confident member of the team,
                 known for his attention to detail and passion for creating excellent coffee experiences for customers.
                 <br/>
                 <br/>
-                Over time, Jabulani has progressed beyond the basics of barista work and has become an expert in his field, 
-                mastering advanced brewing techniques and refining his understanding of coffee profiles and flavor balance. 
-                He is now expanding his skill set further by learning how to bake pastries, 
+                Over time, Jabulani has progressed beyond the basics of barista work and has become an expert in his field,
+                mastering advanced brewing techniques and refining his understanding of coffee profiles and flavor balance.
+                He is now expanding his skill set further by learning how to bake pastries,
                 adding a new dimension to his expertise and showing a strong commitment to growing within the coffee and hospitality industry.
                 <br/>
                 <br/>
@@ -49,17 +57,17 @@ const Team = () => {
             </div>
             <div className={styles.text}>
               <p className={styles.p1}>
-                Sean Van der Deen has worked as a barista at Indi Coffee Co, 
-                where he has been responsible for preparing and serving a variety of coffee beverages to customers in a fast-paced café environment. 
-                His role has included crafting espresso-based drinks, maintaining consistency in quality and presentation, 
-                and ensuring that each customer receives a well-prepared and timely order. 
+                Sean Van der Deen has worked as a barista at Indi Coffee Co,
+                where he has been responsible for preparing and serving a variety of coffee beverages to customers in a fast-paced café environment.
+                His role has included crafting espresso-based drinks, maintaining consistency in quality and presentation,
+                and ensuring that each customer receives a well-prepared and timely order.
                 He has also contributed to maintaining a clean and organized workspace, supporting smooth daily operations.
                 <br/>
                 <br/>
-                During his time at Indi Coffee Co, Sean has developed strong customer service skills, 
-                often engaging with regulars and new customers in a friendly and professional manner. 
-                He has shown reliability in handling peak-hour rushes and working effectively as part of a team to keep service efficient. 
-                His experience as a barista has helped him build attention to detail, time management, and a steady, 
+                During his time at Indi Coffee Co, Sean has developed strong customer service skills,
+                often engaging with regulars and new customers in a friendly and professional manner.
+                He has shown reliability in handling peak-hour rushes and working effectively as part of a team to keep service efficient.
+                His experience as a barista has helped him build attention to detail, time management, and a steady,
                 calm approach to high-pressure service environments.
                 <br/>
                 <br/>
@@ -83,14 +91,14 @@ const Team = () => {
             </div>
             <div className={styles.text}>
               <p className={styles.p1}>
-                Tshepiso Ramogayana has built solid experience as a Barista at Indi Coffee Co, 
-                where she has been responsible for preparing a variety of coffee beverages with consistency and attention to detail. 
-                In her role, she has developed strong technical skills in espresso extraction, milk texturing, and maintaining equipment, 
+                Tshepiso Ramogayana has built solid experience as a Barista at Indi Coffee Co,
+                where she has been responsible for preparing a variety of coffee beverages with consistency and attention to detail.
+                In her role, she has developed strong technical skills in espresso extraction, milk texturing, and maintaining equipment,
                 ensuring that each cup meets the café’s quality standards.
                 <br/>
                 <br/>
-                Beyond drink preparation, Tshepiso has contributed to creating a welcoming customer experience through efficient service and clear communication with guests. 
-                Her time at Indi Coffee Co has also strengthened her ability to work in a fast-paced environment, 
+                Beyond drink preparation, Tshepiso has contributed to creating a welcoming customer experience through efficient service and clear communication with guests.
+                Her time at Indi Coffee Co has also strengthened her ability to work in a fast-paced environment,
                 manage peak-hour demand, and maintain cleanliness and organization behind the counter while supporting overall team operations.
                 <br/>
                 <br/>

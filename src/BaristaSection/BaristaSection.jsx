@@ -41,4 +41,3 @@ const BaristaSection = () => {
 };
 
 export default BaristaSection;
-

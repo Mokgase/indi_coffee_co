@@ -32,7 +32,7 @@
     overflow: hidden;
     cursor: pointer;   */
   }
-  
+
   .roundedButton:after{
     content: "";
   position: absolute;
@@ -59,7 +59,7 @@
     opacity: 0;
     transition: all 1.2s */
   /* } */
-  
+
   .roundedButton:active:after{
   content: "";
   position: absolute;
@@ -79,18 +79,18 @@
     opacity: 1;
     transition: 0s */
   }
-  
+
   .roundedButton:hover{
     border-color: #666666;
     background: #292929;
-    
+
     /* background-color:#6E6B7D; */
   }
 
   .roundedButton:hover::after{
       transform: scale(4);
   }
-  
+
   .text{
     font-family: sans-serif;
     text-wrap: nowrap;
@@ -99,7 +99,7 @@
     margin: 1px;
     padding: 2px;
   }
-  
+
   .text:hover{
     font-family: sans-serif;
     text-wrap: nowrap;
@@ -108,6 +108,3 @@
     margin: 1px;
     padding: 2px;
   }
-  
-  
-  

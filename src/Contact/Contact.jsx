@@ -14,11 +14,11 @@ const form = useRef();
 
     emailjs
       .sendForm(
-        'service_aiael5j', 
-        'template_gtluvs6', 
+        'service_aiael5j',
+        'template_gtluvs6',
         form.current,
         'JLyAuDRbEpuDJRgII',
-      ) 
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -29,7 +29,7 @@ const form = useRef();
         },
       );
   };
-  return ( 
+  return (
       <div id='contact' className='w-full h-full'>
       {/* <Script id="google_analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-ZLP3CMVLW0"></Script> */}
       {/* <Script
@@ -45,22 +45,22 @@ const form = useRef();
       />   */}
       <div className={styles.container}>
         <h1 className={styles.h1}>Let's <span className={styles.color}>Have</span> Coffee</h1>
-          <form className={styles.formcontainer} ref={form} onSubmit={sendEmail}> 
-              
+          <form className={styles.formcontainer} ref={form} onSubmit={sendEmail}>
+
                 <div className={styles.column1}>
                   <label className={styles.labels}>Name</label>
-                  <input 
+                  <input
                   required
-                  type="text" 
+                  type="text"
                   name="user_name"
                   id='name'
                   placeholder='Full name'
                   className={styles.inputs}
                    />
                   <label className={styles.labels}>Province</label>
-                  <input 
+                  <input
                   required
-                  type="dropdown" 
+                  type="dropdown"
                   name="province"
                   id='province'
                   placeholder='Province'
@@ -76,18 +76,18 @@ const form = useRef();
                 </div>
                 <div className={styles.column2}>
                   <label className={styles.labels}>Email</label>
-                  <input 
+                  <input
                     required
-                    type="email" 
-                    name="user_email" 
+                    type="email"
+                    name="user_email"
                     id='user_email'
                     placeholder='Email'
                     className={styles.inputs}
                     />
                   <label className={styles.labels}>Mobile number</label>
-                  <input 
+                  <input
                     required
-                    type="numbers" 
+                    type="numbers"
                     name="mobile_number"
                     id='mobile'
                     placeholder='Mobile number'
@@ -97,11 +97,10 @@ const form = useRef();
                 <div className={styles.button}>
                   <Button type={'submit'} value={'Send'} text={'Send'}/>
                 </div>
-            </form> 
+            </form>
     </div>
     </div>
   )
 };
 
 export default Contact;
-              
