@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className={styles.title}>
             INDI<br />COFFEE<br />CO
           </h1>
-          <p className={styles.tagline}>Premium coffee by people, for people.</p>
+          <p className={styles.tagline}>Premium coffee, for people on the go.</p>
           <a href="#products" className={styles.cta_btn}>Shop Now</a>
         </div>
 
