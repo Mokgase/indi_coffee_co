@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import BaristaSection from '../BaristaSection/BaristaSection';
 import About from '../About/About';
 import Team from '../Team/OurTeam';
-import Products from '../Products/products';
+import Products from '../Products/Products';
 // import StorySection from '../Components/StorySection'
 import Cafe from '../Cafe/Cafe';
 import Hero from '../Components/Hero';
