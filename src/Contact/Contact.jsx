@@ -30,7 +30,7 @@ const form = useRef();
       );
   };
   return (
-      <div id='contact' className='w-full h-full'>
+      <div id='contact' className={styles.page}>
       {/* <Script id="google_analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-ZLP3CMVLW0"></Script> */}
       {/* <Script
         id="google_analytics"

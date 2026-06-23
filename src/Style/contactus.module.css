@@ -5,6 +5,15 @@
   font-style: normal;
 }
 
+
+.page{
+  width: 100%;
+  min-height: 100vh;
+  background: #111;
+  color: black;
+  box-sizing: border-box;
+}
+
 .container{
   margin-top: 4rem;
   padding: 20px;
@@ -22,7 +31,7 @@
 }
 
 .color{
-  color: black;
+  color: white;
 }
 
 .black{
@@ -41,7 +50,7 @@
 }
 
 .labels{
-  color: #6C596E;
+  color: #F4B266;
   display: block;
   margin-bottom: 0.25rem;
 }
@@ -80,20 +89,20 @@
 }
 
 .inputs {
-  color: #6C596E;
+  color: #F4B266;
   width: 100%;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
   outline: none;
   border: none;
-  border-bottom: 2px solid #6E6B7D;
+  border-bottom: 2px solid white;
   transition: border-color 0.15s ease-in-out;
   background: transparent;
 }
 
 .inputs:focus {
-  border-color: #6F7D8C;
+  border-color: #F4B266;
   box-shadow: none;
 }
 
@@ -106,21 +115,21 @@
 }
 
 .textarea {
-  color: #6C596E;
+  color: #F4B266;
   width: 100%;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
   outline: none;
   border: none;
-  border-bottom: 2px solid #6E6B7D;
+  border-bottom: 2px solid white;
   transition: border-color 0.15s ease-in-out;
   background: transparent;
   resize: none;
 }
 
 .textarea:focus {
-  border-color: #6F7D8C;
+  border-color: #F4B266;
   box-shadow: none;
 }
 
