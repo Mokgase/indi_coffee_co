@@ -17,6 +17,7 @@ const Cafe = () => {
                 <h3 className={styles.h3}>
                     Gauteng, Pretoria
                 </h3>
+                <br/>
                 <p className={styles.p1}>
                     Tucked within the lively Atterbury Boulevard Centre in Pretoria, South Africa, Indi Coffee Co is more than just a café it's a gentle pause in your day.
                     Here, the air carries the warm aroma of freshly ground beans, mingling with kind words and soft morning chatter.
@@ -31,7 +32,14 @@ const Cafe = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={cafe} alt="logo" width={310} height={400} placeholder="blur" radius={40} className="w-[80%] h-auto" />
+              <img
+                src={cafe}
+                alt="logo"
+                width={310}
+                height={400}
+                placeholder="blur"
+                radius={40}
+                className="w-[80%] h-auto" />
             </a>
           </div>
           <div className={styles.column3}>

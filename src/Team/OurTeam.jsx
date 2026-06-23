@@ -44,8 +44,8 @@ const Team = () => {
             <img src={Jabulani} alt="logo" width={310} height={400} placeholder="blur" className="w-[80%] h-auto" />
             <div className={styles.text}>
               <div className={styles.subheading}>
-                <p className={styles.p1}>Jabulani Skhosana</p>
-                <p className={styles.p1}>Barista</p>
+                <p className={styles.p2}>Jabulani Skhosana</p>
+                <p className={styles.p2}>Barista</p>
               </div>
             </div>
           </div>
@@ -78,8 +78,8 @@ const Team = () => {
             <img src={Sean} alt="logo" width={310} height={400} placeholder="blur" className="w-[80%] h-auto" />
             <div className={styles.text}>
               <div className={styles.subheading}>
-                <p className={styles.p1}>Sean Van der Deen</p>
-                <p className={styles.p1}>Barista</p>
+                <p className={styles.p2}>Sean Van der Deen</p>
+                <p className={styles.p2}>Barista</p>
               </div>
             </div>
           </div>
@@ -109,8 +109,8 @@ const Team = () => {
             <img src={Tshepiso} alt="logo" width={310} height={400} placeholder="blur" className="w-[80%] h-auto" />
             <div className={styles.text}>
               <div className={styles.subheading}>
-                <p className={styles.p1}>Tshepiso Ramogayana</p>
-                <p className={styles.p1}>Barista</p>
+                <p className={styles.p2}>Tshepiso Ramogayana</p>
+                <p className={styles.p2}>Barista</p>
               </div>
             </div>
           </div>

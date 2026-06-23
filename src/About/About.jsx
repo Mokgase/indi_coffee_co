@@ -39,8 +39,8 @@ const About = () => {
             <div className={styles.text}>
               <div className={styles.subheading}>
                 <p className={styles.p1}>Founded by</p>
-                <p className={styles.p1}>Thapelo Mmakola &</p>
-                <p className={styles.p1}>Thabang Mmakola</p>
+                <p className={styles.p2}>Thapelo Mmakola &</p>
+                <p className={styles.p2}>Thabang Mmakola</p>
               </div>
             </div>
           </div>

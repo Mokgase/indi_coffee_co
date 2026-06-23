@@ -1,6 +1,6 @@
 .box{
     padding: 3% 2.5%;
-    background: #333;
+    background: #111;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -11,8 +11,25 @@
 .row{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-    grid-gap: 100px;
+    grid-gap: 400px;
 }
+
+.column1{
+  width: 250%;
+  }
+
+.column2{
+  width: 250%;
+}
+
+.column3{
+  width:250%;
+}
+
+.column4{
+    text-align: center;
+    margin-top: 5rem;
+  }
 
 @media (max-width: 1000px) {
     .row {
@@ -23,18 +40,18 @@
 }
 
 .listitems{
-    color: #6E6B7D;
+    color: white;
 }
 .listitems:hover{
-    color:  #6C596E;
+    color:  #F4b266;
 }
 
-.list{
+/* .list{
     color:#E5E5E5;
-}
+} */
 
 .heading{
-    color:#6C596E;
+    color:#F4b266;
     font-weight: bold;
 }
 
@@ -61,18 +78,19 @@
     width:250%;
   }
 
-  .column4{
-    width: 250%;
-  }
+  /* .column4{
+    text-align: center;
+    margin-left: 110rem;
+  } */
 
-  .line{
+  /* .line{
     border: none;
     border-top: 4px solid #333;
     margin: 10px;
     width: 80%;
     margin-top: 0.1rem;
     margin-left: 3rem;
-  }
+  } */
 
   .h1{
     font-family: 'Roboto', sans-serif;

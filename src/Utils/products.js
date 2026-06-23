@@ -48,7 +48,7 @@ export default [
       coffeetitle: 'Sunrise Single Origin',
       coffeenotes: 'Citrus • Honey • Almond',
       description: 'A bright and delicate light roast grown in the highlands, this single origin coffee greets you with juicy citrus and honeyed sweetness, finishing with a soft, nutty almond note that makes every morning feel like sunrise.',
-      badge: 'NEW',
+      // badge: 'NEW',
       newDrop: true,
       price: 249,
       roast: 0.25,

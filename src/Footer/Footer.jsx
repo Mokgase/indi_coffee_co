@@ -26,9 +26,10 @@ const Footer =() => {
                     <br/>
                     <a className={styles.listitems} href="" target="_blank">Johannesburg</a>
                 </div>
-                <div className={styles.column4}>
-                    <p className={styles.heading}>2026 Indi Coffee Co</p>
-                </div>
+
+            </div>
+            <div className={styles.column4}>
+                <p className={styles.heading}>2026 Indi Coffee Co.</p>
             </div>
         </div>
     )

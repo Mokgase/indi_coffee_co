@@ -69,8 +69,8 @@
   height: 100%;
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0) 70%
+  rgba(244, 178, 102, 0.25) 0%,
+  rgba(244, 178, 102, 0) 70%
   );
   transform: scale(0);
   transition: transform 0.5s ease;
@@ -95,7 +95,7 @@
     font-family: sans-serif;
     text-wrap: nowrap;
     font-size: medium;
-    color:#6C596E;
+    color:#F4b266;
     margin: 1px;
     padding: 2px;
   }

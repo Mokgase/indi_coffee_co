@@ -68,7 +68,11 @@
   }
 
   .p1{
-    color: black;
+    color: #1A1B25;
+  }
+
+  .p2{
+    color:#F4B266;
   }
   .p{
     font-family: 'Poppins';
