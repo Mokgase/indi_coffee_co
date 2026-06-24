@@ -43,7 +43,7 @@ const Cafe = () => {
             </a>
           </div>
           <div className={styles.column3}>
-            <p className={styles.p1}>
+            <p className={styles.p2}>
                 Cnr Manitoba and, Atterbury Rd,
                 <br/>
                 <br/>

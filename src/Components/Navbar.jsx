@@ -28,7 +28,7 @@ const NavBar = () => {
         <div className={styles.navbarContainer}>
           {/* Logo */}
           <a href="#" className={styles.navbarLogo}>
-            <img src="/Assets/images/i_logo.png" alt="Indi Coffee Co" />
+            <img src="/Assets/images/official_logo.png" alt="Indi Coffee Co" />
           </a>
 
           {/* Desktop Nav Links */}

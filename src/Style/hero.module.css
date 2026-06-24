@@ -130,6 +130,11 @@
     width: min(260px, 100%);
     margin: 0 auto;
   }
+
+  /* only show the first video on mobile/tablet */
+  .video_wrapper:nth-child(n+2) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 499px) {
